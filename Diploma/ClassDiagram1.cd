@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Diploma.BundleConfig">
+    <Position X="37.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\BundleConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.FilterConfig">
+    <Position X="12.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\FilterConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.EmailService" BaseTypeListCollapsed="true">
+    <Position X="24" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\IdentityConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Diploma.SmsService" BaseTypeListCollapsed="true">
+    <Position X="15" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\IdentityConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Diploma.ApplicationUserManager" Collapsed="true">
+    <Position X="73.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\IdentityConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.ApplicationSignInManager">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\IdentityConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.RouteConfig">
+    <Position X="55.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\RouteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Startup">
+    <Position X="26.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\Startup.Auth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.MvcApplication" Collapsed="true">
+    <Position X="73.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Controllers.AccountController">
+    <Position X="3.5" Y="18.75" Width="1.5" />
+    <Members>
+      <Method Name="AccountController" Hidden="true" />
+      <Method Name="AddErrors" Hidden="true" />
+      <Method Name="ConfirmEmail" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="ExternalLogin" Hidden="true" />
+      <Method Name="ExternalLoginCallback" Hidden="true" />
+      <Method Name="ExternalLoginConfirmation" Hidden="true" />
+      <Method Name="ExternalLoginFailure" Hidden="true" />
+      <Method Name="ForgotPassword" Hidden="true" />
+      <Method Name="ForgotPasswordConfirmation" Hidden="true" />
+      <Method Name="Login" Hidden="true" />
+      <Method Name="LogOff" Hidden="true" />
+      <Method Name="RedirectToLocal" Hidden="true" />
+      <Method Name="Register" Hidden="true" />
+      <Method Name="ResetPassword" Hidden="true" />
+      <Method Name="ResetPasswordConfirmation" Hidden="true" />
+      <Method Name="SendCode" Hidden="true" />
+      <Method Name="VerifyCode" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="Diploma.Controllers.AccountController.ChallengeResult" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\AccountController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAABAChACAAAAAAAAFgEgAABAABMKIAAAMRAAQgAAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Controllers.AdmitsController">
+    <Position X="10.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\AdmitsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Controllers.BuildingsController">
+    <Position X="8.75" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\BuildingsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Controllers.CompaniesController">
+    <Position X="17.75" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\CompaniesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Controllers.EmployeesController">
+    <Position X="14" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\EmployeesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Controllers.HomeController">
+    <Position X="16" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEACAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Controllers.ManageController">
+    <Position X="7" Y="18.75" Width="1.5" />
+    <Members>
+      <Method Name="AddErrors" Hidden="true" />
+      <Method Name="AddPhoneNumber" Hidden="true" />
+      <Method Name="ChangePassword" Hidden="true" />
+      <Method Name="DisableTwoFactorAuthentication" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="EnableTwoFactorAuthentication" Hidden="true" />
+      <Method Name="HasPassword" Hidden="true" />
+      <Method Name="HasPhoneNumber" Hidden="true" />
+      <Method Name="Index" Hidden="true" />
+      <Method Name="LinkLogin" Hidden="true" />
+      <Method Name="LinkLoginCallback" Hidden="true" />
+      <Method Name="ManageController" Hidden="true" />
+      <Method Name="ManageLogins" Hidden="true" />
+      <Method Name="RemoveLogin" Hidden="true" />
+      <Method Name="RemovePhoneNumber" Hidden="true" />
+      <Method Name="SetPassword" Hidden="true" />
+      <Method Name="VerifyPhoneNumber" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="Diploma.Controllers.ManageController.ManageMessageId" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\ManageController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAABACAQiAAgAAAAEFhAAAAAAEAIMIAAEEEgAAkAAA=</HashCode>
+      <FileName>Controllers\ManageController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Controllers.PicturesController">
+    <Position X="19.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\PicturesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Controllers.PositionsController">
+    <Position X="5.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\PositionsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Controllers.RoomsController">
+    <Position X="12.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\RoomsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.ExternalLoginConfirmationViewModel">
+    <Position X="57.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.ExternalLoginListViewModel">
+    <Position X="62.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.SendCodeViewModel">
+    <Position X="64.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAIAAAAAAAAAAAAAAAAAAIAAAAgAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.VerifyCodeViewModel">
+    <Position X="39.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAEAAAAAAAgAAAAAAAAAAAAAAIAAAAgAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.ForgotViewModel">
+    <Position X="42" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.LoginViewModel">
+    <Position X="3.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAgAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.RegisterViewModel">
+    <Position X="17.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAIAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.ResetPasswordViewModel">
+    <Position X="28.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAgAAAAAAAAAAACAAAAAAAAIAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.ForgotPasswordViewModel">
+    <Position X="30.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.DBContext" Collapsed="true">
+    <Position X="71.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAAAAAAAAgAAAAAgACGAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Models\DBContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.Initializer">
+    <Position X="9" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DBContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.ApplicationUser">
+    <Position X="7.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IdentityModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.ApplicationDbContext" Collapsed="true">
+    <Position X="71.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IdentityModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.IndexViewModel">
+    <Position X="60" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAQAAAAAAAAAAAAAAQAAAEAEA=</HashCode>
+      <FileName>Models\ManageViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.ManageLoginsViewModel">
+    <Position X="33" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Models\ManageViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.FactorViewModel">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Models\ManageViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.SetPasswordViewModel">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Models\ManageViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.ChangePasswordViewModel">
+    <Position X="51" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAEAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Models\ManageViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.AddPhoneNumberViewModel">
+    <Position X="19.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ManageViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.VerifyPhoneNumberViewModel">
+    <Position X="48.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ManageViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.ConfigureTwoFactorViewModel">
+    <Position X="10.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ManageViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.DataBase.Admit">
+    <Position X="35.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAACAAAAAIABAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataBase\Admit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.DataBase.Building">
+    <Position X="21.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAIAAAgAAEAAAAACAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Models\DataBase\Building.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.DataBase.Company">
+    <Position X="66.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataBase\Company.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.DataBase.Employee">
+    <Position X="44.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAEgAAAAAAAAgAEBAAAQAAACAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Models\DataBase\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.DataBase.Picture">
+    <Position X="53.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQACAAAABAAAAAAAAACAAA=</HashCode>
+      <FileName>Models\DataBase\Picture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.DataBase.Position">
+    <Position X="69" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataBase\Position.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diploma.Models.DataBase.Rooms">
+    <Position X="46.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABAAAAAAAAgAAEAAAAAAAAAAAAAAAABAAAEAAAA=</HashCode>
+      <FileName>Models\DataBase\Rooms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="36.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Data.Entity.DropCreateDatabaseIfModelChanges&lt;TContext&gt;">
+    <Position X="9" Y="13" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.AspNet.Identity.EntityFramework.IdentityUser">
+    <Position X="7.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.AspNet.Identity.Owin.SignInManager&lt;TUser, TKey&gt;">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Web.Mvc.Controller">
+    <Position X="11.5" Y="12.5" Width="1.5" />
+    <Members>
+      <Method Name="BeginExecute" Hidden="true" />
+      <Method Name="BeginExecuteCore" Hidden="true" />
+      <Method Name="Content" Hidden="true" />
+      <Method Name="Controller" Hidden="true" />
+      <Method Name="CreateActionInvoker" Hidden="true" />
+      <Method Name="CreateTempDataProvider" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="EndExecute" Hidden="true" />
+      <Method Name="EndExecuteCore" Hidden="true" />
+      <Method Name="ExecuteCore" Hidden="true" />
+      <Method Name="File" Hidden="true" />
+      <Method Name="HandleUnknownAction" Hidden="true" />
+      <Method Name="HttpNotFound" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Method Name="JavaScript" Hidden="true" />
+      <Method Name="Json" Hidden="true" />
+      <Method Name="OnActionExecuted" Hidden="true" />
+      <Method Name="OnActionExecuting" Hidden="true" />
+      <Method Name="OnAuthentication" Hidden="true" />
+      <Method Name="OnAuthenticationChallenge" Hidden="true" />
+      <Method Name="OnAuthorization" Hidden="true" />
+      <Method Name="OnException" Hidden="true" />
+      <Method Name="OnResultExecuted" Hidden="true" />
+      <Method Name="OnResultExecuting" Hidden="true" />
+      <Method Name="PartialView" Hidden="true" />
+      <Method Name="Redirect" Hidden="true" />
+      <Method Name="RedirectPermanent" Hidden="true" />
+      <Method Name="RedirectToAction" Hidden="true" />
+      <Method Name="RedirectToActionPermanent" Hidden="true" />
+      <Method Name="RedirectToRoute" Hidden="true" />
+      <Method Name="RedirectToRoutePermanent" Hidden="true" />
+      <Method Name="TryUpdateModel" Hidden="true" />
+      <Method Name="TryValidateModel" Hidden="true" />
+      <Method Name="UpdateModel" Hidden="true" />
+      <Method Name="ValidateModel" Hidden="true" />
+      <Method Name="View" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
