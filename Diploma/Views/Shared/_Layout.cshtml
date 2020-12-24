@@ -8,39 +8,42 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link href="@Url.Content("~/Styles/Index.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
             <div class="navbar-header">
                 @Html.ActionLink("Система распознавания лиц", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <ul class="nav navbar-nav">
-                <li class="nav-item active">
-                    @Html.ActionLink("Admits", "Index", "Admits")
-                </li>
-                <li class="nav-item active">
-                    @Html.ActionLink("Buildings", "Index", "Buildings")
-                </li>
-                <li class="nav-item active">
-                    @Html.ActionLink("Companies", "Index", "Companies")
-                </li>
-                <li class="nav-item active">
-                    @Html.ActionLink("Employees", "Index", "Employees")
-                </li>
-                <li class="nav-item active">
-                    @Html.ActionLink("Pictures", "Index", "Pictures")
-                </li>
-                <li class="nav-item active">
-                    @Html.ActionLink("Positions", "Index", "Positions")
-                </li>
-                <li class="nav-item active">
-                    @Html.ActionLink("Rooms", "Index", "Rooms")
-                </li>
-            </ul>
-                @Html.Partial("_LoginPartial")
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active" style="margin-right: 10px;">
+                        @Html.ActionLink("Admits", "Index", "Admits")
+                    </li>
+                    <li class="nav-item active" style="margin-right: 10px;">
+                        @Html.ActionLink("Buildings", "Index", "Buildings")
+                    </li>
+                    <li class="nav-item active" style="margin-right: 10px;">
+                        @Html.ActionLink("Companies", "Index", "Companies")
+                    </li>
+                    <li class="nav-item active" style="margin-right: 10px;">
+                        @Html.ActionLink("Employees", "Index", "Employees")
+                    </li>
+                    <li class="nav-item active" style="margin-right: 10px;">
+                        @Html.ActionLink("Pictures", "Index", "Pictures")
+                    </li>
+                    <li class="nav-item active" style="margin-right: 10px;">
+                        @Html.ActionLink("Positions", "Index", "Positions")
+                    </li>
+                    <li class="nav-item active" style="margin-right: 10px;">
+                        @Html.ActionLink("Rooms", "Index", "Rooms")
+                    </li>
+                </ul>
             </div>
+            @Html.Partial("_LoginPartial")
+        </div>
         </div>
     </div>
     <div class="container body-content">
