@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -9,12 +10,15 @@ using System.Web;
 using System.Web.Mvc;
 using Diploma.Models;
 using Diploma.Models.DataBase;
+using Emgu.CV;
+using Emgu.CV.Structure;
 
 namespace Diploma.Controllers
 {
     [Authorize]
     public class PicturesController : Controller
     {
+        static readonly CascadeClassifier cascadeClassifier = new CascadeClassifier("C:/Users/Nameless/source/repos/Diploma/Diploma/Content/haarcascade_frontalface_alt_tree.xml");
         private DBContext db = new DBContext();
 
         // GET: Pictures
@@ -37,6 +41,61 @@ namespace Diploma.Controllers
                 return HttpNotFound();
             }
             return View(picture);
+        }
+
+        [HttpGet]
+        public ActionResult Detect(int? id)
+        {
+            Picture picture = db.Pictures.Find(id);
+
+            if (ModelState.IsValid && picture != null)
+            {
+                Bitmap bitmap;
+
+                using (var ms = new MemoryStream(picture.Image))
+                {
+                    bitmap = new Bitmap(ms);
+                }
+
+                Image<Bgr, byte> img = new Image<Bgr, byte>(bitmap);
+
+                Rectangle[] rectangles = cascadeClassifier.DetectMultiScale(img, 1.1, 1);
+
+                foreach (Rectangle rec in rectangles)
+                {
+                    using (Graphics gh = Graphics.FromImage(bitmap))
+                    {
+                        using (Pen pen = new Pen(Color.Red, 1))
+                        {
+                            gh.DrawRectangle(pen, rec);
+                        }
+                    }
+                }
+
+                var bitmapBytes = BitmapToBytes(bitmap); //Convert bitmap into a byte array
+
+                Picture temp = new Picture
+                {
+                    Id = picture.Id,
+                    Employee = picture.Employee,
+                    EmployeeId = picture.EmployeeId,
+                    Image = bitmapBytes,
+                    Name = picture.Name
+                };
+
+                return View(temp);//Return as file result
+            }
+
+            return RedirectToAction("Index");
+        }
+
+        private static byte[] BitmapToBytes(Bitmap img)
+        {
+            using (MemoryStream stream = new MemoryStream())
+            {
+                img.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                return stream.ToArray();
+            }
         }
 
         // GET: Pictures/Create

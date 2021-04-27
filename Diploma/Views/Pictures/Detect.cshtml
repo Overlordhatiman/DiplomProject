@@ -1,10 +1,10 @@
 ﻿@model Diploma.Models.DataBase.Picture
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detect";
 }
 
-<h2>Details</h2>
+<h2>Detect</h2>
 
 <div>
     <h4>Picture</h4>
@@ -26,8 +26,6 @@
         </dd>
     </dl>
 </div>
-<p>
-    @Html.ActionLink("Detect", "Detect", new { id = Model.Id }) |
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+<p>    
     @Html.ActionLink("Back to List", "Index")
 </p>
