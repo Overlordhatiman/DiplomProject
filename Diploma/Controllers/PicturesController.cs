@@ -6,12 +6,15 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Runtime.Remoting.Lifetime;
 using System.Web;
 using System.Web.Mvc;
 using Diploma.Models;
 using Diploma.Models.DataBase;
 using Emgu.CV;
+using Emgu.CV.Face;
 using Emgu.CV.Structure;
+using Emgu.CV.Util;
 
 namespace Diploma.Controllers
 {
@@ -46,7 +49,23 @@ namespace Diploma.Controllers
         [HttpGet]
         public ActionResult Detect(int? id)
         {
-            Picture picture = db.Pictures.Find(id);
+            var arrayOfEmployees = db.Pictures.Include(p => p.Employee);
+            var tmp = arrayOfEmployees.ToList();
+
+            foreach (var item in tmp)
+            {
+                if (item.Id == id)
+                {
+                    ViewData["IsAnEmployee"] = "Я нашел его. Это - " + item.Employee.FirstName;
+                    break;
+                }
+                else
+                {
+                    ViewData["IsAnEmployee"] = "Cant find this person";
+                }
+            }
+
+            Picture picture = db.Pictures.Find(id);            
 
             if (ModelState.IsValid && picture != null)
             {
@@ -88,7 +107,7 @@ namespace Diploma.Controllers
 
             return RedirectToAction("Index");
         }
-
+        
         private static byte[] BitmapToBytes(Bitmap img)
         {
             using (MemoryStream stream = new MemoryStream())
